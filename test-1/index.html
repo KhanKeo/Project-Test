@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400;1,600;1,800&display=swap" rel="stylesheet">
+    <title>star</title>
+</head>
+<body>
+   <section class="header">
+       <nav>
+           <a href="index.html"> <img src="images/logo.png" ></a>
+           <div class="nav-links" id="navLink">
+            <i class="fa fa-times" onclick="hideMenu()"></i> 
+               <ul>
+                   <li><a href="#">Home</a></li>
+                   <li><a href="#">About</a></li>
+                   <li><a href="#">Course</a></li>
+                   <li><a href="#">Blog</a></li>
+                   <li><a href="#">Contact</a></li>
+               </ul>
+
+           </div>
+           <i class="fa fa-bars" onclick="showMenu()"></i>
+       </nav>
+       <div class="text-box">
+           <h1>Word's Biggest University</h1>
+           <p>Making website is now one</p>
+           <a href="" class="hero-btn">Visit us to know more</a>
+       </div>
+       
+   </section>
+   <!-- ----course--- -->
+   <section class="course">
+       <h1>Corse we offer</h1>
+       <p>lorem ipsum dolor sit amet, consectetur</p>
+       <div class="row">
+           <div class="coure-col">
+               <h3>intermidiate</h3>
+               <p>lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+           </div>
+           <div class="coure-col">
+            <h3>degree</h3>
+            <p>lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+        <div class="coure-col">
+            <h3>post graduation</h3>
+            <p>lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+       </div>
+        
+   </section>
+
+   <!-- -------campus----- -->
+   <section class="campus">
+       <h1>Our global campus</h1>
+       <p>lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+       <div class="row">
+           <div class="campus-col">
+               <img src="images/london.png" >
+               <div class="layer">
+                   <h3>LONDON</h3>
+               </div>
+           </div>
+           <div class="campus-col">
+            <img src="images/newyork.png" >
+            <div class="layer">
+                <h3>NEW YORK</h3>
+            </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/washington.png" >
+                <div class="layer">
+                    <h3>WASINGTON</h3>
+                </div>
+            </div>
+       </div>
+       
+   </section>
+   <!-- ---facilities--- -->
+   <section class="facilities">
+       <h1>Uor facilities</h1>
+       <p>lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+       <div class="row">
+           <div class="facilities-col">
+               <img src="images/library.png" >
+               <h3>Word Class library</h3>
+               <p>lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+           </div>
+           <div class="facilities-col">
+            <img src="images/basketball.png" >
+            <h3>LArgest play groud</h3>
+            <p>lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/cafeteria.png" >
+            <h3>Tasty and Healthy food</h3>
+            <p>lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+       </div>
+
+   </section>
+   <!-- -------testimonials----- -->
+   <section class="testimonials">
+    <h1>What Our Sttudents Says</h1>
+    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    <div class="row">
+        <div class="testimonials-col">
+            <img src="images/user1.jpg" >
+            <div>
+                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <h3>Christine Brekley</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        </div>
+        <div class="testimonials-col">
+            <img src="images/user2.jpg" >
+            <div>
+                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <h3>Dvid Beyer</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+            </div>
+        </div>
+        
+    </div>
+
+   </section>
+   <!-- ---Call to action---- -->
+   <section class="cta">
+       <h1>Enroll for our various online course <br/> form the word</h1>
+       <a href="" class="hero-btn">CONTACT US</a>
+
+   </section>
+<!-- ---Footer---- -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    <div class="icons"> 
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-google"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <p>Made with <i class="fas fa-heartbeat"></i>Easy Totorials</p>
+
+
+</section>
+
+
+
+
+
+
+
+   <!------javaScript for tegle menu------>
+   <script>
+       var navLink = document.getElementById("navLink");
+       function showMenu(){
+           navLink.style.right = "0";
+       }
+       function hideMenu(){
+           navLink.style.right = "-200px";
+       }
+   </script>
+    
+</body>
+</html>
